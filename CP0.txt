@@ -1,0 +1,3 @@
+Tématem mojí semestrální práce je databáze pro autoservis.
+Hlavními prvky budou objednávky, sklad, tabulka zákazníků.
+Toto téma jsem si vybral, protože mám v této oblasti mnoho zkušeností.
