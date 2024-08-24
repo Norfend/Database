@@ -3,25 +3,25 @@
   <li>FK: (login) ⊆ Accounts(login)</li>
   </ul></li>
   <li>Accounts(<u>login</u>, <u>person</u>)<ul>
-  <li>FK: (person) ⊆ Person(phoneNumber, firstName, secondName)</li>
+  <li>FK: (person) ⊆ Person(phoneNumber)</li>
   </ul></li>
   <li>Clients(<u>person</u>, loyaltyPoints)<ul>
-  <li>FK: (person) ⊆ Person(phoneNumber, firstName, secondName)</li>
+  <li>FK: (person) ⊆ Person(phoneNumber)</li>
   </ul></li>
   <li>Employees(<u>person</u>, salary, city, street)<ul>
-  <li>FK: (person) ⊆ Person(phoneNumber, firstName, secondName)</li> 
+  <li>FK: (person) ⊆ Person(phoneNumber)</li>
   </ul></li>
   <li>Supervisor(<u>employee</u>, supervisor)<ul>
-  <li>FK: (employee) ⊆ Employees(phoneNumber, firstName, secondName)</li>
-  <li>FK: (supervisor) ⊆ Employees(phoneNumber, firstName, secondName)</li>
+  <li>FK: (employee) ⊆ Employees(phoneNumber)</li>
+  <li>FK: (supervisor) ⊆ Employees(phoneNumber)</li>
   </ul></li>
-  <li>Cars(<u>client</u>, <u>VIN</u>, manufacturer, model, year)<ul>
-  <li>FK: (client) ⊆ Clients(phoneNumber, firstName, secondName)</li>
+  <li>Cars(<u>VIN</u>, manufacturer, model, year, client)<ul>
+  <li>FK: (client) ⊆ Clients(phoneNumber)</li>
   </ul></li>
   <li>Orders(<u>car</u>, <u>orderNumber</u>, orderItems, orderOperations, day, month, year)<ul>
   <li>FK: (car) ⊆ Cars(VIN)</li>
   </ul></li>
-  <li>Invoice(<u>orderNumber</u>, number</u>, totalCost, items)<ul>
+  <li>Invoice(<u>orderNumber, number</u>, totalCost, items)<ul>
   <li>FK: (orderNumber) ⊆ Orders(orderNumber)</li>
   </ul></li>  
   </ul>
